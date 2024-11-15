@@ -26,10 +26,17 @@ public class Carro {
     public int hashCode() {
         return Objects.hashCode(marca);
     }
-
     public void setMarca(String marca) {
         this.marca = marca;
 
+    }
+
+
+        @Override
+        public String toString() {
+            return "Carro{" +
+                    "marca='" + marca + '\'' +
+                    '}';
 
     }
 }
