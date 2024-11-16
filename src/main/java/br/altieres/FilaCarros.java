@@ -12,9 +12,9 @@ public class FilaCarros {
         queueCarros.add(new Carro("Chevrolet"));
         queueCarros.add(new Carro("Fiat"));
 
-        System.out.println(queueCarros);
- //       System.out.println("Carro removido: " + queueCarros.poll());
-        System.out.println(queueCarros.peek());
+
+       System.out.println("Carro removido: " + queueCarros.poll());
+       System.out.println(queueCarros.peek());
         System.out.println("Tamanho da fila: " + queueCarros.size());
         System.out.println("É vazia? " + queueCarros.isEmpty());
         System.out.println("Carro procurado: " + queueCarros.contains(new Carro("Ford")));
@@ -25,5 +25,9 @@ public class FilaCarros {
         System.out.println("Tamanho da fila: " + queueCarros.size());
         System.out.println("Primeiro carro da fila: " + queueCarros.peek());
 
+        System.out.println(queueCarros.poll());
+
+        System.out.println(queueCarros.contains(new Carro("ford")));
+        System.out.println(queueCarros);
     }
 }
